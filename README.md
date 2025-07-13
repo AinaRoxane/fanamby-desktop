@@ -18,9 +18,8 @@ sudo dpkg -i fanamby_0.1.0_amd64.deb
 
 ## Cas 2 : Installation à partir du code source (`source_code`)
 
-> voir pour l'installation [Documentation Tauri](https://v1.tauri.app/v1/guides/getting-started/prerequisites/)
+Guide d'installation complet dans [Documentation Tauri](https://v1.tauri.app/v1/guides/getting-started/prerequisites/)
 > Prérequis :
-
 > * Node.js v20.19.0 minimum
 > * Rustc v1.88.0 
 > * FFmpeg installé (et accessible via le terminal)
