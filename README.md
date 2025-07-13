@@ -18,12 +18,12 @@ sudo dpkg -i fanamby_0.1.0_amd64.deb
 
 ## Cas 2 : Installation à partir du code source (`source_code`)
 
+> voir pour l'installation [Documentation Tauri](https://v1.tauri.app/v1/guides/getting-started/prerequisites/)
 > Prérequis :
->
+
 > * Node.js v20.19.0 minimum
-> * Rust v1.88.0 (toolchain stable)
-> * FFmpeg installé et accessible via le terminal
->   Plus d'informations : [Documentation Tauri](https://v1.tauri.app/v1/guides/getting-started/prerequisites/)
+> * Rustc v1.88.0 
+> * FFmpeg installé (et accessible via le terminal)
 
 1. Décompresser l’archive `source_code.zip`.
 
@@ -45,7 +45,7 @@ ffmpeg -version
 
 ## Lancer l’application
 
-1. Ouvrir le menu des applications (par exemple "Activités" sur Ubuntu).
+1. Ouvrir le menu des applications (en appuyant sur la touche "windows").
 
 2. Rechercher **Fanamby**.
 
@@ -55,17 +55,17 @@ ffmpeg -version
 
 ## Utilisation de l’application
 
-1. Cliquer sur le bouton "Workspace" pour choisir le dossier contenant votre vidéo.
+1. Cliquer sur le bouton "Workspace" puis le bouton "folder" pour choisir le dossier contenant votre vidéo.
 
-2. Sélectionner ensuite un fichier vidéo dans ce dossier.
-   Le chargement peut prendre entre 2 et 10 secondes.
+2. Sélectionner ensuite, via filechooser, un fichier vidéo dans ce dossier.
+Le chargement peut prendre entre 2 et 5 secondes.
 
 3. Une fois la vidéo affichée, cliquer sur le bouton "Lecture" pour démarrer.
 
-4. Pour déclencher l’analyse (extraction d’un extrait) :
+4. Pour déclencher l’analyse (extraction d’un extrait) soit:
 
-   * soit taper deux fois sur le pavé tactile,
-   * soit cliquer sur le bouton "Pause" du lecteur vidéo.
+   * taper deux fois sur le pavé tactile,
+   * cliquer sur le bouton "Pause" du lecteur vidéo.
 
 5. Remplir les champs du formulaire (nom du joueur, indicateur, secondes avant/après).
 
@@ -78,7 +78,7 @@ ffmpeg -version
 * Les extraits sont enregistrés dans un sous-dossier nommé :
 
   ```
-  fanamby-AAAA-MM-JJ
+  fanamby-YYYY-MM-DD
   ```
 
   Ce dossier est créé dans le même répertoire que la vidéo d’origine.
@@ -86,5 +86,5 @@ ffmpeg -version
 * Les fichiers extraits suivent ce format de nommage :
 
   ```
-  joueur_indicateur_hh:mm:ss.mp4
+  joueur_[indicateur]_hh:mm:ss.mp4
   ```
